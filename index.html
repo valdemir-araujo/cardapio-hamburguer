@@ -1,0 +1,257 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oleo+Script:wght@400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--HEADER-->
+
+    <header class="header">
+      <div class="dados">
+        <img src="assets/hamb-1.png" alt="foto hamburguer1" id="hamburguer1" />
+        <h1>VK Hamburguer</h1>
+        <span id="end"
+          >Rua: Silvério Hipólito Pinheiro N:80 - Lagoa Seca PB</span
+        >
+        <div class="hora" id="date-span">
+          <span>Seg á Dom 18:00 as 22:00 <span id="aber-fecha">Aberto</span></span>
+        </div>
+      </div>
+    </header>
+
+    <!--FIM DO HEADER-->
+
+    <h2 id="h21">Conheça nosso menu</h2>
+
+    <!--INICIO DO MENU-->
+    <div id="menu">
+      <main class="menu2">
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/hamb-1.png" alt="hamburguer1" class="hambur" />
+          <div>
+            <p id="titulo">Hamburguer Smash</p>
+            <p id="descri">
+              Pão levinho de fermentação natural de trigo, burguer de 160g,
+              queijo prato e maionese da casa
+            </p>
+            <div class="valor">
+              <p>18.90</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Hamburguer Smash"
+                data-price="18.90"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/hamb-2.png" alt="hamburguer2" class="hambur" />
+          <div>
+            <p id="titulo">Hamburguer Duplo</p>
+            <p id="descri">
+              Pão levinho de fermentação natural de trigo, burguer de 160g,
+              queijo prato e maionese da casa
+            </p>
+            <div class="valor">
+              <p>32.90</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Hamburguer Duplo"
+                data-price="32.90"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/hamb-3.png" alt="hamburguer3" class="hambur" />
+          <div>
+            <p id="titulo">Hamburguer Triplo</p>
+            <p id="descri">
+              Pão levinho de fermentação natural de trigo, burguer de 160g,
+              queijo prato e maionese da casa
+            </p>
+            <div class="valor">
+              <p>42.90</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Hamburguer Triplo"
+                data-price="42.90"
+              >
+                <span class="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/hamb-4.png" alt="hamburguer4" class="hambur" />
+          <div>
+            <p id="titulo">Hamburguer de Carne</p>
+            <p id="descri">
+              Pão levinho de fermentação natural de trigo, burguer de 160g,
+              queijo prato e maionese da casa
+            </p>
+            <div class="valor">
+              <p>22.90</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Hamburguer de Carne"
+                data-price="22.90"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+      </main>
+
+      <h2 id="h21">Bebidas</h2>
+
+      <!--BEBIDAS-->
+
+      <div class="menu2">
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/refri-1.png" alt="coca lata" class="hambur" />
+          <div class="bebidas">
+            <p id="titulo">Coca cola</p>
+            <div class="valor">
+              <p>8.00</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Coca cola"
+                data-price="8.00"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/refri-2.png" alt="guarana lata" class="hambur" />
+          <div class="bebidas">
+            <p id="titulo">Guarana lata</p>
+            <div class="valor">
+              <p>8.00</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Guarana lata"
+                data-price="8.00"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+        <!--INICIO DO ITEM-->
+        <div class="div-item">
+          <img src="assets/sp.png" alt="sprite lata" class="hambur" />
+          <div class="bebidas">
+            <p id="titulo">Sprite lata</p>
+            <div class="valor">
+              <p>8.00</p>
+              <button
+                id="delete"
+                class="add-to-card-btn"
+                data-name="Sprite lata"
+                data-price="8.00"
+              >
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIN DO ITEM-->
+      </div>
+    </div>
+
+    <!--FIM DO MENU-->
+
+    <!--INICIO MODAL-->
+
+    <div class="modal" id="card-modal">
+      <div class="modal2">
+        <h2 class="h2modal">Meu carrinho</h2>
+        <div id="card-itens"></div>
+
+        <div class="div-input" id="div-input2">
+          <p class="ptotal">Total: <span id="card-total">0.00</span></p>
+          <p class="ptotal">Endereço de entrega:</p>
+          <input
+            type="text"
+            placeholder="Digite deu endereço"
+            id="address"
+            class="input-modal"
+          />
+          <p id="address-warn">Digite seu endereço completo!</p>
+          <div class="btn-modal">
+            <button id="close-modal-btn" class="botoes-modal">Fechar</button>
+            <button id="checkaut-btn" class="botoes-modal">
+              Finalizar pedido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FIM MODAL-->
+
+    <!--INICIO BUTOON CART FOOTER-->
+    <footer>
+      <button id="card-btn">
+        <span id="cart-count">( 0 ) </span>
+        Veja meu carrinho
+        <span class="material-symbols-outlined"> shopping_cart </span>
+      </button>
+    </footer>
+    <!--FIM BUTOON CART FOOTER-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
