@@ -105,6 +105,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #cart-count {
   padding: 5px;
@@ -205,6 +207,19 @@ footer {
   #h21 {
     font-size: 18px;
   }
+  footer {
+  height: 50px;
+}
+#cart-count {
+  font-size: 18px;
+}
+.input-modal {
+  height: 50px;
+}
+
+.botoes-modal {
+  height: 40px;
+}
 }
 @media screen and (min-width: 768px) {
   .menu2 {
