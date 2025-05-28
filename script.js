@@ -151,7 +151,19 @@ checkaut.addEventListener("click", function () {
   }
 
   if (cart.length === 0) {
-    alert("Adicione um iten primeiro!");
+    //alert("Adicione um iten primeiro!");
+    Toastify({
+      text: "Adicione um iten primeiro!",
+      duration: 3000,
+      destination: "https://github.com/valdemir-araujo",
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right,rgb(131, 2, 2))",
+      },
+    }).showToast();
   } else if (addressInput.value === "") {
     addressInput.style.border = "1px solid rgb(201, 0, 0)";
     addressWarn.style.display = "flex";
