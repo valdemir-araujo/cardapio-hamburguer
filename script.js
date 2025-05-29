@@ -169,16 +169,18 @@ checkaut.addEventListener("click", function () {
     addressWarn.style.display = "flex";
     addressInput.focus();
   } else {
+    const tot = cardTotal.innerText
+    
     const cartItens = cart
       .map((iten) => {
-        return `${iten.name} \n Quantidade: ${iten.quantity} \n Preço: ${iten.price} |`;
+        return `${iten.name} \n Quantidade: ${iten.quantity} \n Preço: ${iten.price.toFixed(2)} |`;
       })
       .join("");
 
     const message = encodeURIComponent(cartItens);
     const phone = "993347632";
     window.open(
-      `https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`,
+      `https://wa.me/${phone}?text=${message} Total: ${tot} Endereço: ${addressInput.value}`,
       "_blank"
     );
 
